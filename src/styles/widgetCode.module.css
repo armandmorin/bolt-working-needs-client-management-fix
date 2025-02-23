@@ -1,0 +1,20 @@
+.clientKeyInfo {
+  margin-top: 20px;
+  padding: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+
+.clientKeyInfo p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.clientKeyInfo p:first-child {
+  margin-bottom: 8px;
+}
+
+.clientKeyInfo strong {
+  color: #1e293b;
+}

@@ -1,1 +1,1 @@
-# bolt-working-needs-client-management-fix
+# bolt-generated-project

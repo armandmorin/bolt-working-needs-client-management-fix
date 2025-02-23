@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Accessibility SaaS</title>
+      </head>
+      <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+        <script>
+          // Handle direct navigation
+          (function() {
+            // Check if this is a direct navigation (not through React Router)
+            if (window.location.pathname !== '/' && !window.location.pathname.includes('.')) {
+              const path = window.location.pathname;
+              const validRoutes = ['/', '/register', '/super-admin-login', '/super-admin', '/admin', '/client', '/widget-customization', '/clients'];
+              
+              // If it's a valid route, let it process normally
+              if (validRoutes.includes(path)) {
+                return;
+              }
+              
+              // If it's not a valid route, redirect to home
+              window.location.href = '/';
+            }
+          })();
+        </script>
+      </body>
+    </html>
